@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.topbar{
+    background-color: black;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    transition: 0.7s all ease-in-out;
+    
+}
+
+.weblogo{
+    width: 127px;
+    height: 67px;
+}
+
+.logoImg{
+    object-fit: contain;
+    width: 100%;
+}
+
+.navList{
+    display: flex;
+    color: white;
+    gap:20px;
+    margin-left: 116px;
+
+}
+
+.profile{
+    margin-left: 600px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 20px;
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navItem{
+    font-family:'Roboto', sans-serif ;
+    font-weight: bold;
+}
+
+.userImg{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.theme{
+    width: 50px;
+    height: 20px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: goldenrod;
+    justify-content: space-between;
+    transition: 0.7s all ease-in-out;
+}
+
+/* leftbar css */
+
+.leftbar{
+    width: 60px;
+    height: calc(100vh - 70px);
+    background-color: black;
+position: fixed;
+left: 0;
+bottom: 0;
+z-index: 2;
+transition: 0.7s all ease-in-out;
+
+}
+
+.leftbarWrapper{
+    color: white;
+display: flex;
+flex-direction: column;
+margin-top: 25px;
+padding: 5px;
+align-items: center;
+height: 40%;
+font-size: 1.4rem;
+gap: 24px;
+
+}
+
+/* maincontainer */
+
+.mainContainer{
+    position: absolute;
+    width: calc(100vw - 77px);
+    height: (100% - 70px);
+    left: 60px;
+    top: 70px;
+    background-color: black;
+    transition: 0.7s all ease-in-out;
+
+}
+
+/* //trailer section  */
+
+
+
+.movieTrailer{
+    background: url('img/f-1.jpg');
+    width: 100%;
+    height: 65vh;
+}
+
+.movieTrailerContainer{
+    width: 100%;
+    height: 100%;
+    background: rgb(41,40,40);
+background: linear-gradient(0deg, rgba(41,40,40,1) 0%, rgba(228,15,15,0) 85%);
+}
+
+.movie-logo{
+    height: 200px;
+    width: 400px;
+    object-fit: contain;
+}
+
+.movieAbout{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 420px;
+}
+
+.watchButton{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 33px;
+    margin-top: 10px;
+    background-color: rgb(162, 253, 16);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.movieDesc{
+    margin-left: 33px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.movieListContainer{
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapperItemImg{
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 1;
+ 
+}
+
+.wrapperItem{
+    position: relative;
+    width: 400px;
+
+    /* border: 2px solid black; */
+}
+
+.wrapperItemName{
+    position: absolute;
+    top: 30px;
+    left: 38px;
+    font-size: 2rem;
+    color: white;
+    background-color: grey;
+    opacity: 0;
+
+}
+
+.wrapperItemDesc{
+    position: absolute;
+    top: 65px;
+    left: 40px;
+    width: 200px;
+    color: white;
+    font-size: 1.3rem;
+    background-color: grey;
+    opacity: 0;
+}
+
+.releaseButton{
+    position: absolute;
+    left: 5px;
+    bottom: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 33px;
+    margin-top: 10px;
+    background-color: rgb(162, 253, 16);
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.wrapperItem:hover .wrapperItemImg{
+    opacity: 0.5;
+    transition: 0.8s all ease-in-out;
+    transform: scale(1.05);
+    margin: 0 20px;
+}
+
+.wrapperItem:hover .wrapperItemName,
+.wrapperItem:hover .wrapperItemDesc,
+.wrapperItem:hover .releaseButton{
+    opacity: 1;
+    transition: 0.8s all ease-in-out;
+}
+
+.movielistContainerWrapper{
+    display: flex;
+    gap: 40px;
+    padding: 8px;
+    transition: 1s all ease-in-out;
+}
+
+.movieTrailerdark{
+    background: url('img/f-2.jpg');
+    width: 100%;
+    height: 65vh;
+}
+
+.movie-logo-dark{
+    height: 200px;
+    width: 400px;
+    object-fit: contain;
+    margin-left: 30px;
+}
+
+h1{
+    color: white;
+}
+
+.arrows{
+    color: lightgrey;
+    font-size: 120px;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+  z-index: 2;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.newreleaseheading{
+    margin: 30px 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* theme */
+
+
+
+.ball
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    padding: 2px;
+    bottom: 0.7px;
+    cursor: pointer;
+    transition: 0.7s all ease-in-out;
+}
+
+.topbar.active{
+    background-color: white;
+    transition: 0.7s all ease-in-out;
+
+}
+
+.navList.active{
+    color: black;
+    transition: 0.7s all ease-in-out;
+}
+
+.leftbar.active{
+    background-color: white;
+    transition: 0.7s all ease-in-out;
+}
+
+.leftbarWrapper.active{
+    color: black;
+    transition: 0.7s all ease-in-out;
+}
+
+.mainContainer.active{
+    background-color: white;
+    transition: 0.7s all ease-in-out;
+   
+}
+
+.newreleaseheading.active{
+    color: black;
+    transition: 0.7s all ease-in-out;
+}
+
+.theme.active{
+    background-color: black;
+    transition: 0.7s all ease-in-out;
+
+}
+
+.ball.active{
+    background-color: white;
+    transform: translateX(30px);
+    transition: 0.7s all ease-in-out;
+}
+
+.profileHeading{
+    color:white;
+    transition: 0.7s all ease-in-out;
+}
+
+.profileHeading.active{
+    color: black;
+    transition: 0.7s all ease-in-out;
+}
